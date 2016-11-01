@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+BUILD_DIR=$1
+BUILD_CHCHE_DIR=$2
+
+echo $BUILD_DIR
+echo $BUILD_CHCHE_DIR
+
+
+
+if [ -f $BUILD_DIR/*.html ];then
+    apt-get install apache2 -y
+    apt-get install php5 -y
+fi
+
+
